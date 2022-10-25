@@ -114,6 +114,13 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 73px;
+
+  transition: background-color 250ms var(--timing-function);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--button-hover-color);
 }
 
 .section {
@@ -263,13 +270,15 @@ body {
 
   cursor: pointer;
 
-  transition: background-color 250ms var(--timing-function);
+
 }
 
 .hero .button:hover,
 .hero .button:focus {
   background-color: var(--button-hover-color);
 }
+
+
 
 /* Секція наші переваги */
 
@@ -527,6 +536,12 @@ body {
   cursor: pointer;
 }
 
+.button.submit-button {
+  min-width: 200px;
+  padding: 10px 28px;
+  text-align: center;
+}
+
 
 /* футер */
 
@@ -539,11 +554,9 @@ body {
 .footer .container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
-.social-links {
-  margin-left: 70px;
-}
 
 .footer .logo {
   display: inline-block;
@@ -584,6 +597,7 @@ body {
 
 .footer-title {
   font-size: inherit;
+  font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--page-white-color);
@@ -618,6 +632,39 @@ body {
 
 .footer .icon {
   fill: currentColor;
+}
+
+.form-send-out {
+  width: 570px;
+}
+
+.send-out-input {
+  padding: 15px 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--adress-contacts-color);
+  flex-grow: 1;
+  margin-right: 12px;
+}
+
+.send-out-input::placeholder {
+  color: var(--adress-contacts-color);
+}
+
+.send-out-label {
+  display: flex;
+}
+
+.footer .button.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon.send-out {
+  margin-left: 10px;
 }
 
 /* сторінка портфоліо */
